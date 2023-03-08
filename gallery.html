@@ -8,70 +8,6 @@
 
 
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: #e87722;
-  padding: 50px;
-  border-radius: 20px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 20px 16px;
-  background-color: lightgray;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-
-.btn.active {
-  background-color: #03244d;
-  color: white;
-}
-
-
 
 </style>
 </head>
@@ -107,25 +43,19 @@ h1 {
     <div class="menu">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
     <li class="services">
     <a href="services.html">Services</a>
     
     <!-- Dropdown -->      
     <ul class="dropdown">
-      <li><a href="Deckandporch.html">Deck and Porch</a></li>
-  
-      <li><a href="drywall.html">Drywall</a></li>
-      
-      <li><a href="fence.html">Fence</a></li>
-      
-      <li><a href="general.html">General Maintenance, Repair, and Remodel</a></li>
-    
-      <li><a href="kitchen.html">Kitchen</a></li>
-    
-      <li><a href="pluming.html">Plumbing</a></li>
-    
-      <li><a href="tileandflooring.html">Tile and Flooring</a></li>
+    <li><a href="services.html">Deck and Porch</a></li>
+    <li><a href="services.html">Drywall</a></li>
+    <li><a href="services.html">Fence</a></li>
+    <li><a href="services.html">General Maintenance, Repair, and Remodel</a></li>
+    <li><a href="services.html">Kitchen</a></li>
+    <li><a href="services.html">Plumbing</a></li>
+    <li><a href="services.html">Tile and Flooring</a></li>
     
     </ul>
     </li> 
@@ -135,143 +65,304 @@ h1 {
     </nav>
     </body>
     
-<body>
 
-<!-- MAIN (Center website) -->
+    <div class="gallery">
+      <div class="filters">
+        <button class="filter" data-filter="bathroom">Bathroom</button>
+        <button class="filter" data-filter="deckporch">Deck and Porch</button>
+        <button class="filter" data-filter="fence">Fence</button>
+        <button class="filter" data-filter="kitchen">Kitchen</button>
+        <button class="filter" data-filter="tileflooringwalkway">Tile, Flooring, and Walkway</button>
+        <button class="filter" data-filter="wallswindowsdoors">Walls, Windows, and Doors</button>
+        <button class="filter" data-filter="Other">Other</button>
+
+
+      </div>
+      <style>
+        .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter:hover {
+  background-color: #bbb;
+  color: #fff;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item:hover {
+  transform: scale(1.2);
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.item:hover .description {
+  opacity: 1;
+}
+
+.description h3 {
+  margin-top: 0;
+}
+
+.filter-out {
+  display: none;
+}
+
+      </style>
+      <script>
+        const filters = document.querySelectorAll('.filter');
+const items = document.querySelectorAll('.item');
+
+filters.forEach(filter => {
+  filter.addEventListener('click', () => {
+    const selected
+
+      </script>
+      <div class="items">
+        <div class="item bathroom">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Bathroom Remodel</h3>
+            <p>New bathroom vanity and mirror along with new wallpaper.</p>
+             
+      <div class="items">
+        <div class="item bathroom">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Bathroom Remodel</h3>
+            <p>Marble tile along with a new shower head, faucet, and temperature adjuster.</p>
+
+     <div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Staircase Deck</h3>
+            <p>Staircase that leads to a deck on the outside of the second story.</p>
+             
+<div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Brick Patio</h3>
+            <p>Brick patio progession, some bricks and drain already laid.</p>
+             
+     <div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Brick Patio</h3>
+            <p>Finished brick patio with drain (water from patio leads to drain).</p>
+             
+<div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Casual deck progression.</p>
+             
+     <div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Finished deck with railing.</p>
+             
+<div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Close up staircase for a deck.</p>
+             
+     <div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Multi-color deck with railings.</p>
+             
+<div class="items">
+        <div class="item deckporch">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Modern deck design with built in stairs.</p>
+             
+      <div class="items">
+        <div class="item fence">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Fence</h3>
+            <p>Casual fence.</p>
+             
+<div class="items">
+        <div class="item fence">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Fence</h3>
+            <p>Fence on a hill.</p>
+             
+             
+<div class="items">
+        <div class="item kitchen">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Kitchen Remodel</h3>
+            <p>Full view of custom backdrop pattern and new vanity.</p>
+
+             
+      <div class="items">
+        <div class="item kitchen">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Kitchen Remodel</h3>
+            <p>Closer view of kitcen remodel. custom backdrop, vanity, cabinet, and flooring.</p>
+             
+<div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Walkway</h3>
+            <p>Outdoor stone walkway.</p>
+             
+      <div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Walkway</h3>
+            <p>Outdoor stone walkway.</p>
+             
+<div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Walkway</h3>
+            <p>Outdoor concrete path.</p>
+             
+      <div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Walkway</h3>
+            <p>Outdoor concrete stair path.</p>
+             
+      <div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Tile Laying</h3>
+            <p>Hexagon tile being laid in bathroom.</p>
+             
+      <div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Tile Laying</h3>
+            <p>Hexagon tile laid in bathroom.</p>
+             
+<div class="items">
+        <div class="item tileflooringwalkway">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Wood Floor</h3>
+            <p>New wood floor along with painted walls.</p>
+             
+      <div class="items">
+        <div class="item wallswindowsdoors">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Wall Frame and Window</h3>
+            <p>Wall Frame with a window and wood frame.</p>
+             
+<div class="items">
+        <div class="item wallswindowsdoors">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Opening</h3>
+            <p>Opening made before door was put in.</p>
+             
+      <div class="items">
+        <div class="item wallswindowsdoors">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Wall and Window Trim</h3>
+            <p>Custom designed trim made for walls and a window.</p>
+             
+<div class="items">
+        <div class="item wallswindowsdoors">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Metal Wall with Backdrop</h3>
+            <p>Metal wall made with new backdrop.</p>
+             
+      <div class="items">
+        <div class="item other">
+          <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Planter</h3>
+            <p>Custom planter.</p>
+             
+    
+             
+        <!-- Add more items here -->
+        
+      </div>
+    </div>
+    
+
 <div class="main">
 
-   <p>‎ </p>
-   <p>‎ </p>
-   <p>‎ </p>
-   
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('deckandporch')"> Deck and Porch</button>
-  <button class="btn" onclick="filterSelection('drywall')"> Drywall</button>
-  <button class="btn" onclick="filterSelection('fence')"> Fence</button>
-  <button class="btn" onclick="filterSelection('kitchen')"> Kitchen</button>
-  <button class="btn" onclick="filterSelection('general')"> Maintenace, Repair, Remodel, and Refurbishing</button>
-  <button class="btn" onclick="filterSelection('plumbing')"> Plumbing</button>
-  <button class="btn" onclick="filterSelection('tileandflooring')"> Tile and Flooring</button>
-</div>
-
-<div class="row">
-  <div class="column deckandporch">
-    <div class="content">
-      <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="deckandporch" style="width:100%">
-      <h4>Custom Deck</h4>
-      <p>Custom deck made of wood on a very small slope leading to drains.</p>
-    </div>
-  </div>
-  <div class="column kitchen">
-    <div class="content">
-    <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="kitchen" style="width:100%">
-      <h4>Kitchen Remodel</h4>
-      <p>Custom cabinets with new counters and a never ending backdrop.</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column cars">
-    <div class="content">
-      <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column people">
-    <div class="content">
-      <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Car" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Car" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="Car" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
 <footer>
   <div class="footer-container">
     <div class="footer-left">
@@ -284,7 +375,7 @@ for (var i = 0; i < btns.length; i++) {
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
