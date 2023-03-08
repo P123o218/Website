@@ -34,7 +34,7 @@ box-sizing: border-box;
 
 .navbar {
 
-  z-index: 100;
+  z-index: 1001;
 
   display: flex;
   
