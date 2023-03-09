@@ -213,20 +213,46 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /*Button style*/
 .buttonstyle {
-            background-color: white;
-            border: 1px solid black;
-            color: black;
-            padding: 5px 10px;
-            text-align: center;
-            display: inline-block;
-            font-size: 20px;
-            margin: 20px 20px;
-            cursor: pointer;
-            border-radius: 10px;
+  background-color: #dd550c;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 50px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
 
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif
-        }
+.buttonstyle2 {
+  background-color: rgb(12, 35, 64);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 50px;
+  box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.buttonstyle2:hover{
+  background-color: #496e9c;
+}
+
+.buttonstyle:hover{
+  background-color: #f68026;
+}
 .image-text-container {
   width: 300px;
   border: 2px solid black;
@@ -263,7 +289,7 @@ body, h1, h2, h3, h4, h5, h6 {
   <div class="hero-text">
     <h1>Every Sound Structure Must Have A Firm Foundation</h1>
     <button class="buttonstyle" onclick="window.location.href = './contact';">Contact Us Now</button>
-    <button class="buttonstyle" onclick="window.location.href = './gallery';">View Our Gallery</button>
+    <button class="buttonstyle2" onclick="window.location.href = './gallery';">View Our Gallery</button>
   </div>
 </div>
 
