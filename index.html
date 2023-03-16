@@ -4,13 +4,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 <link rel="manifest" href="/site.webmanifest">
-	  
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Complete Maintenance & Repair</title>
   </head>
 
@@ -47,7 +53,7 @@ body, h1, h2, h3, h4, h5, h6 {
       
       <!-- Logo on bar -->
       
-      <div class="logo"><a href="index.html"><img src="CMPlogonotext.png"
+      <div class="logo"><a href="index.html"><img src="https://i.imgur.com/qAEohwE.png"
         width="80px"
         height="80px" 
         alt="logo">
@@ -76,6 +82,7 @@ body, h1, h2, h3, h4, h5, h6 {
       <li><a href="services.html">Deck and Porch</a></li>
       <li><a href="services.html">Drywall</a></li>
       <li><a href="services.html">Fence</a></li>
+      <li><a href="services.html">General Maintenance, Repair, and Remodel</a></li>
       <li><a href="services.html">Kitchen</a></li>
       <li><a href="services.html">Plumbing</a></li>
       <li><a href="services.html">Tile and Flooring</a></li>
@@ -104,7 +111,6 @@ body, h1, h2, h3, h4, h5, h6 {
 
     img {
         max-width: 100%
-	align:right ;
       }
       .image {
         border-radius: 1000px;
@@ -128,14 +134,15 @@ body, h1, h2, h3, h4, h5, h6 {
   <style>
     .p1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /* use font-size ##vw; for the window based text*/
 
 .hi {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
 }
 
 .hi2 {
@@ -191,7 +198,7 @@ body, h1, h2, h3, h4, h5, h6 {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bgimg.jg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/BDAja3k.jpg");
 
   /* Set a specific height */
   height: 83.5%;
@@ -218,50 +225,24 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /*Button style*/
 .buttonstyle {
-  background-color: #dd550c;
-  border: 1px solid black;
-  color: black;
-  padding: 5px 10px;
-  text-align: center;
-  display: inline-block;
-  margin: 20px 20px;
-  cursor: pointer;
-  border-radius: 10px;
-  height: 50px;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  transition: background-color 0.3s ease;
-}
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+            border-radius: 10px;
 
-.buttonstyle2 {
-  background-color: rgb(12, 35, 64);
-  border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  padding: 5px 10px;
-  text-align: center;
-  display: inline-block;
-  margin: 20px 20px;
-  cursor: pointer;
-  border-radius: 10px;
-  height: 50px;
-  box-sizing: border-box; 
-  font-family: 'Open Sans', sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-.buttonstyle2:hover{
-  background-color: #496e9c;
-}
-
-.buttonstyle:hover{
-  background-color: #fb984c;
-}
-	
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+        }
 .image-text-container {
-  width: 300px;
-  border: 2px solid gray;
+  display: flex;
+  align-items: center;
   padding: 50px;
-  margin: 20px;
 }
 
 
@@ -270,11 +251,15 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 600px) {
- .image-text-container {
+  .image-text-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .text-container {
+    margin-left: 0;
+    margin-top: 10px; /* Adjust as needed */
+  }
 }
 
 
@@ -286,25 +271,34 @@ body, h1, h2, h3, h4, h5, h6 {
   <div class="hero-text">
     <h1>Every Sound Structure Must Have A Firm Foundation</h1>
     <button class="buttonstyle" onclick="window.location.href = 'contact.html';">Contact Us Now</button>
-    <button class="buttonstyle2" onclick="window.location.href = 'gallery.html';">View Our Gallery</button>
+    <button class="buttonstyle" onclick="window.location.href = 'gallery.html';">View Our Gallery</button>
   </div>
 </div>
 
-<div>
-<img src="sideimg.jpg" style="width: 25%;>
+
 <div class="image-text-container">
- 
+  <img src="https://i.imgur.com/3DsgVJm.jpg" style="width: 25%;">
   <div class="text-container">
         <h class="hi">Assured Quality</h1>
-        <p class="p1">In my business, I make sure what the customer wants is put in front. I use quality Materials and I don't ever take shortcuts in my work.</p>
+        <p class="p1">At Complete Maintenance and Repair, the customer always comes first. We make sure what the customer wants is put in front. Quality Materials are used and cheaping out on work never occurs.</p>
   </div>
-</div>
 </div>
   </div>
   </div>
 </div>
 </div>
 
+<div class="image-text-container2">
+  <div class="text-container">
+        <h class="hi">Respectful To You And Your Property</h1>
+        <p class="p1">At Complete Maintenance and Repair, the customer always comes first. We make sure what the customer wants is put in front. Quality Materials are used and cheaping out on work never occurs.</p>
+  </div>
+  <div class="image-container">
+    <img src="https://i.imgur.com/3DsgVJm.jpg" style="width: 25%;">
+  </div>
+</div>
+  </div>
+  </div>
 </div>
 </div>
 
@@ -312,6 +306,7 @@ body, h1, h2, h3, h4, h5, h6 {
   <div class="footer-container">
     <div class="footer-left">
       <h class="hi2">Complete Maintenance and Repair </h3>
+      <p class="p2">Licenses: something something blah</p>  
       <p class="p2">Based in Northwest Arkansas</p>
       <p class="p2">completemaintenancerepair@gmail.com</p>
     </div>
