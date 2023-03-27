@@ -1,221 +1,113 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="index2.css">
+<link rel="stylesheet" href="style.css">
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-<style>
-   
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      h2{
+        font-size: 55px;
+      }
+      p{
+        font-size: 30px;
+      }
+
+      #content {
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      #content p {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar">
+      
+      <!-- Logo on bar -->
+      
+      <div class="logo"><a href="index.html"><img src="https://i.imgur.com/qAEohwE.png"
+        width="80px"
+        height="80px" 
+        alt="logo">
+      </div>
+    </a>
+      
+      <ul class="nav-links">
+      
+      <!-- Checkbox toggle and icon -->
+      
+      <input type="checkbox" id="checkbox_toggle" />
+      
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- Menu -->
+      
+      <div class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li class="services">
+      <a href="services.html">Services</a>
+      
+      <!-- Dropdown -->      
+      <ul class="dropdown">
+      <li><a href="services.html">Deck and Porch</a></li>
+      <li><a href="services.html">Drywall</a></li>
+      <li><a href="services.html">Fence</a></li>
+      <li><a href="services.html">General Maintenance, Repair, and Remodel</a></li>
+      <li><a href="services.html">Kitchen</a></li>
+      <li><a href="services.html">Plumbing</a></li>
+      <li><a href="services.html">Tile and Flooring</a></li>
+      
+      </ul>
+      </li> 
+      <li><a href="contactpage.html">Contact</a></li>
+      </div>
+      </ul>
+      </nav>
 
 
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 100px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 10px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: center;
-  width: 90%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  padding: 50px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-
-
-
-</style>
-</head>
-<body>
-
-  <nav class="navbar">
-  
-  <!-- LOGO -->
-  
-  <div class="logo"><a href="index"><img src="CMPlogonotext.png"
-    width="80px"
-    height="80px" 
-    alt="logo">
-  </div>
-</a>
-  
-  <!-- NAVIGATION MENU -->
-  
-  <ul class="nav-links">
-  
-  <!-- USING CHECKBOX HACK -->
-  
-  <input type="checkbox" id="checkbox_toggle" />
-  
-  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-  
-  <!-- NAVIGATION MENUS -->
-  
-  <div class="menu">
-  
-  <li><a href="index">Home</a></li>
-  
-  <li><a href="about">About</a></li>
-
-  <li><a href="gallery">Gallery</a></li>
-  
-  <li class="services">
-  
-  <a href="services">Services</a>
-  
-  <!-- DROPDOWN MENU -->
-  
-  <ul class="dropdown">
-  
-  <li><a href="Deckandporch">Deck and Porch</a></li>
-  
-  <li><a href="drywall">Drywall</a></li>
-  
-  <li><a href="fence">Fence</a></li>
-    
-  <li><a href="kitchen">Kitchen</a></li>
-
-  <li><a href="pluming">Plumbing</a></li>
-
-  <li><a href="tileandflooring">Tile and Flooring</a></li>
-  
-  </ul>
-  
-  </li>
-  
-  <li><a href="contact">Contact</a></li>
-  
-  </div>
-  
-  </ul>
-  
-  </nav>
-  
-  </body>
-<body>
-
-<!-- MAIN (Center website) -->
-<div class="main">
-
-
-   
-  <style>
-    .p1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-}
-
-.hi {
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 55px;
-}
-  </style>
-</div>
-
-<div class="content">
-  <h class="hi">Dereck Farnsworth</h>
-  <p class="p1">
-    I am Dereck Farnsworth, the owner and sole worker of Complete Maintenance and Repair. Having been in the handyman
-    field for over 30 years, I am confident that I can do any job of any matter. I am proud of my professionalism
-    and my ability to create relationships with my customers.
-    </p>
-</div>
-</div>
-
-  <div class="content">
-    <h class="hi">My Origin</h>
-    <p class="p1">I have always had a passion for handyman work. I have worked for multiple maintenance companies in my lifetime.
-      I decided that I should take my work to the next level by starting Complete Maintenance and Repair. Ever since,
-      I have been creating great bonds with customers and have been doing great jobs.
-    </p>
+    <div id="header">
     </div>
-  </div>
+    <div id="content">
 
-  <div class="content">
-    <h class="hi">My Mission</h>
-    <p class="p1"> 
-      The handyman field is full of people who are driven by money and do poor work for it. I believe that hiringt
-      a trusting handyman should be easy. This is why I offer my service to give professional and detailed work without
-      ripping off my customers.
+      <h2>About Us</h2>
+      <p>Complete Maintenance Repair specializes in offering the best construction and remodel work. We guarantee
+        top-notch quality and focus on putting your wants and needs of a modeled home or building into real life.
+        Our business has always served all customers in Northwest Arkansas. We have always kept our clients happy
+        with our constructions, remodels, and repairs, and will continue to do so. Our customers and our quality
+        have always been and still are our main priority in the company. We’re determined to keep working hard and
+        building long-lasting relationships with our clients.
     </p>
-    </div>
-  </div>
 
-  <div class="content">
-    <h class="hi">Contact Me</h>
-    <p class="p1">
-      You can contact me through my form <a href="contact"> here.</a>
+      <h2>Our Origin</h2>
+      <p>Dereck Farnsworth first started and still currently runs Complete Maintenance and Repair in order to improve
+        buildings and homes by constructing remodels and renovations, and also do things like build decks, porches,
+        walls, and much more. We started off by serving customers in the local Bentonville area. As we grew, we have
+        expanded to serve clients in all of Northwest Arkansas. We have always strived to make sure our clients are
+        satisfied throughout our journey.
     </p>
-    </div
-  </div>
 
+      <h2>Our Mission</h2>
+      <p>Our mission is to provide the best possible service to our customers, and to continuously improve and innovate in order to stay ahead of the competition.</p>
 
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-left">
-      <h class="hi2">Complete Maintenance and Repair </h3>
-      <p class="p2">Based in Northwest Arkansas</p>
-      <p class="p2">completemaintenancerepair@gmail.com</p>
-    </div>
-    <div class="footer-right">
+      <h2>Contact Us</h2>
+      <p>Feel free to contact us with any questions or concerns:</p>
       <ul>
-        <li><a href="index">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="gallery">Gallery</a></li>
-        <li><a href="services">Services</a></li>
-        <li><a href="contact">Contact</a></li>
+        <li style="font-size: 30px;">Phone: 555-555-5555</li>
+        <li style="font-size: 30px;">Email: info@example.com</li>
+        <li style="font-size: 30px;">Address: 123 Main St, Anytown USA</li>
       </ul>
     </div>
-  </div>
-</footer>
-
-
-</body>
+  </body>
 </html>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-
-<link rel="stylesheet" type="text/css" href="index2.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="footer.css" media="screen" />
