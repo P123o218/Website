@@ -148,6 +148,89 @@ h1 {
   font-size: 55px;
 }
   </style>
+    
+    /* Images code*/
+ <style>
+        .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter:hover {
+  background-color: #bbb;
+  color: #fff;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item:hover {
+  transform: scale(1.2);
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.item:hover .description {
+  opacity: 1;
+}
+
+.description h3 {
+  margin-top: 0;
+}
+
+.filter-out {
+  display: none;
+}
+    </style>
 </div>
 
 <div class="content">
@@ -155,6 +238,70 @@ h1 {
     <p class="p1">We can make custom decks with drains, any type of decks off or on the ground, along with using any material, while keeping strong supports on all of our decks and porches.</p>
   </div>
 
+            <div class="item deckporch">
+          <img src="DeckStaircase.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Staircase Deck</h3>
+            <p>Staircase that leads to a deck on the outside of the second story.</p>
+                       </div>
+        </div>
+        <div class="item deckporch">
+          <img src="BrickDeckwDrain1.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Brick Patio</h3>
+            <p>Brick patio progession, some bricks and drain already laid.</p>
+          </div>
+        </div>
+
+        <div class="item deckporch">
+          <img src="BrickDeckwDrain2.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Brick Patio</h3>
+            <p>Finished brick patio with drain (water from patio leads to drain).</p>
+                       </div>
+        </div>
+
+        <div class="item deckporch">
+          <img src="Deck1.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Casual deck progression.</p>
+                       </div>
+        </div>
+
+        <div class="item deckporch">
+          <img src="Deck2.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Finished deck with railing.</p>
+                       </div>
+        </div>
+
+        <div class="item deckporch">
+          <img src="PaintedStaircaseDeck1.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Close up staircase for a deck.</p>
+                       </div>
+        </div>
+
+        <div class="item deckporch">
+          <img src="PaintedStaircaseDeck3.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Multi-color deck with railings.</p>
+                       </div>
+        </div>
+
+        <div class="item deckporch">
+          <img src="PaintedStaircaseDeck2.jpg" alt="Nature Image 1">
+          <div class="description">
+            <h3>Deck</h3>
+            <p>Modern deck design with built in stairs.</p>
+                       </div>
+        </div>
+
+    
   <p>‎ </p>
   <p>‎ </p>
   <p>‎ </p>
