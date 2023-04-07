@@ -106,7 +106,7 @@ h1 {
       
         <li><a href="Deckandporch">Deck and Porch</a></li>
   
-        <li><a href="drywall">Drywall</a></li>
+        <li><a href="drywall">Custom Wall And Window</a></li>
         
         <li><a href="fence">Fence</a></li>
               
@@ -150,37 +150,112 @@ h1 {
   </style>
 </div>
 
-<div class="content">
+
+  <style>
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  }
+  
+  .filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  
+  .filter {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+  .filter:hover {
+  background-color: #bbb;
+  color: #fff;
+  }
+  
+  .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+  .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  
+  .item:hover {
+  transform: scale(1.2);
+  }
+  
+  .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+  }
+  
+  .item:hover .description {
+  opacity: 1;
+  }
+  
+  .description h3 {
+  margin-top: 0;
+  }
+  
+  .filter-out {
+  display: none;
+  }
+  </style>
+  </div>
+  
+  
+ <div class="content">
     <h class="hi">Kitchen</h>
     <p class="p1">In our kitchen services, we can install appliances, make wall splashes, counters and countertops, cabinets with or without crowns, and more.</p>
   </div>
-
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
-  <p>‎ </p>
+  <div class="items">
+    <div class="item kitchen">
+      <img src="AllCustomKitchen1.jpg" alt="Nature Image 1">
+      <div class="description">
+        <h3>Kitchen Remodel</h3>
+        <p>Full view of custom backdrop pattern and new vanity.</p>
+      </div>
+    </div>
+         
+    <div class="item kitchen">
+      <img src="AllCustomKitchen2.jpg" alt="Nature Image 1">
+      <div class="description">
+        <h3>Kitchen Remodel</h3>
+        <p>Closer view of kitcen remodel. custom backdrop, vanity, cabinet, and flooring.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="footer-container">
