@@ -32,7 +32,7 @@ box-sizing: border-box;
   /* NAVBAR STYLING STARTS */
 .navbar {
   overflow: hidden;
-  color: grey;
+  background-color: grey;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -55,7 +55,7 @@ box-sizing: border-box;
   font-size: 16px;  
   border: none;
   outline: none;
-  color: grey;
+  color: white;
   padding: 40px 40px;
   background-color: inherit;
   font-family: inherit;
