@@ -14,7 +14,6 @@ box-sizing: border-box;
   body {
   
   font-family: cursive;
-    background-color: white;
   
   }
   
@@ -31,67 +30,129 @@ box-sizing: border-box;
   }
 
   /* NAVBAR STYLING STARTS */
+
 .navbar {
-  overflow: hidden;
-  background-color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-}
+position:relative;
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 40px 40px;
-  text-decoration: none;
-}
+  z-index: 101;
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  display: flex;
+  
+  align-items: center;
+  
+  justify-content: space-between;
+  
+  padding: 5px;
+  
+  background-color: gray;
+  
+  color: #fff;
+  
+  }
+  
+  .nav-links a {
 
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  background-color: blue;
-  padding: 40px 40px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+    z-index: 101;
+  
+  color: #fff;
+  
+  }
+  
+  /* LOGO */
+  
+  .logo {
+  
+  font-size: 32px;
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: grey;
-}
-
-.dropdown-content {
+  z-index: 102;
+  
+  }
+  
+  /* NAVBAR MENU */
+  
+  .menu {
+  
+  display: flex;
+  
+  gap: 1em;
+  
+  font-size: 18px;
+  
+  }
+  
+  .menu li:hover {
+  
+  background-color: darkgray;
+  
+  border-radius: 5px;
+  
+  
+  }
+  
+  .menu li {
+  
+    padding: 20px 14px;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  /* DROPDOWN MENU */
+  
+  .services {
+  
+  position: relative; 
+  
+  }
+  
+  .dropdown {
+  
+  
+  background-color: darkgray;
+  
+  padding: 1em 0;
+  
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  
   display: none;
-  position: absolute;
-  color: grey;
-  min-width: 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  
+  border-radius: 8px;
+  
+  top: 35px;
+  
+  }
+  
+  .dropdown li + li {
+  
+  margin-top: 10px;
+  
+  }
+  
+  .dropdown li {
+  
+  padding: 0.5em 1em;
+  
+  float: left;
 
-.dropdown-content a {
-  float: none;
-  color: white;
-  padding: 40px 40px;
-  text-decoration: none;
+  width: 8em;
+  
+  text-align: center;
+  
+  }
+  
+  .dropdown li:hover {
+  
+  background-color: gray;
+  
+  }
+  
+  .services:hover .dropdown {
+  
   display: block;
-  text-align: left;
-}
+  
+  }
 
-.dropdown-content a:hover {
-  background-color: blue;
-}
+  /*RESPONSIVE NAVBAR MENU STARTS*/
 
-.show {
-  display: block;
-}
 /* CHECKBOX HACK */
 
 input[type=checkbox]{
