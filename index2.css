@@ -32,7 +32,7 @@ box-sizing: border-box;
   /* NAVBAR STYLING STARTS */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: grey;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -77,7 +77,7 @@ box-sizing: border-box;
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 40px 40px;
   text-decoration: none;
   display: block;
