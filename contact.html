@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="cssyomomstyle.css">
     <link rel="stylesheet" type="text/css" href="index2.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
@@ -9,8 +10,8 @@
   </head>
   <body>
 
-     <nav class="navbar">
-      
+    <nav class="navbar">
+  
       <!-- Logo on bar -->
       
       <div class="logo"><a href="index.html"><img src="CMRlogonotext.png"
@@ -19,28 +20,40 @@
         alt="logo">
       </div>
     </a>
-
       
-      <div class="navbar">
-      <a href="index">Home</a>
-      <a href="gallery">Gallery</a>
-      <a href="about">About</a>
+      <ul class="nav-links">
+      
+      <!-- Checkbox toggle and icon -->
+      
+      <input type="checkbox" id="checkbox_toggle" />
+      
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- Menu -->
+      
+      <div class="menu">
+      <li><a href="index">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="gallery">Gallery</a></li>
+      <li class="services">
       <a href="services">Services</a>
-      <a href="contact">Contact</a>
-	      
-  <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Dropdown
-    <i class="fa fa-caret-down"></i>
-  </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="drywall">Constume Wall And Windows</a>
-      <a href="fence">Fence</a>
-      <a href="kitchen">Kitchen</a>
-      <a href="pluming">Pluming</a>
-      <a href="tileandflooring">Tile And Flooring</a>
-    </div>
-  </div>
-</div>
+      
+      <!-- Dropdown -->      
+      <ul class="dropdown">
+    <li><a href="Deckandporch">Deck and Porch</a></li>
+    <li><a href="drywall">Custom Wall And Window</a></li>
+    <li><a href="fence">Fence</a></li>
+    <li><a href="kitchen">Kitchen</a></li>
+    <li><a href="pluming">Plumbing</a></li>
+    <li><a href="tileandflooring">Tile and Flooring</a></li>
+    
+      
+      </ul>
+      </li> 
+      <li><a href="contact.html">Contact</a></li>
+      </div>
+      </ul>
+      </nav>
 <style>
       * {
   box-sizing: border-box;
@@ -86,6 +99,10 @@ textarea {
   border: none;
   border-radius: 5px;
   background-color: #f9f9f9;
+}
+.box{
+  color: #fff;
+  background-color: #dd550c;
 }
 
 button {
@@ -136,7 +153,7 @@ button:hover {
         <input type="text" id="zipcode" name="zipcode" required>
 
         <label for="service_needed">Service Needed:</label>
-        <select id="service_needed" name="service_needed">
+        <select id="service_needed" name="service_needed" class="box">
           <option value="general">Handyman Work</option>
           <option value="support">Support</option>
           <option value="feedback">Feedback</option>
@@ -149,6 +166,16 @@ button:hover {
         <button type="submit">Send</button>
       </form>
     </div>
+
+    <div class="container">
+      <h1>Further Information</h1>
+      <center>
+        <label for="Email">My Email: completemaintenancerepair@gmail.com</label>
+      </center>
+      </form>
+    </div>
+
+
     <footer>
   <div class="footer-container">
     <div class="footer-left">
@@ -168,23 +195,4 @@ button:hover {
   </div>
 </footer>
   </body>
-	  
-	  <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
-	  
 </html>
