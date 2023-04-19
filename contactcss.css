@@ -17,6 +17,7 @@ body{
     font-size: larger;
     background: #0C2340;
     display: flex;
+    border: black;
 }
 .contact-left{
     flex-basis: 60%;
@@ -54,7 +55,7 @@ input{
     width: 80%;
     color: #ffffff;
     caret-color: white;
-    border: none;
+    border: black;
     background-color: #0C2340;
     border-bottom: 1px solid #ffffff;
     outline: none;
