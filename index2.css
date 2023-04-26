@@ -96,6 +96,18 @@ position:relative;
   
   }
   
+.dropdown:hover .dropdown_menu--animated
+    display: block
+.dropdown_menu--animated
+    display: none
+    li
+      display: block
+      opacity: 1
+
+.dropdown_menu-6
+    animation: growDown 300ms ease-in-out forwards
+    transform-origin: top center
+
   .menu li:hover {
   
   background-color: darkgray;
