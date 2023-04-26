@@ -105,30 +105,12 @@ position:relative;
   }
   
   .dropdown {
-    //background-color: darkgray;
-    //padding: 1em 0;
-    //position: absolute; /*WITH RESPECT TO PARENT*/
-    //display: none;
-    //border-radius: 8px;
-    //top: 35px;
-    
-    padding: 20px 40px
-   display: flex
-   justify-content: center
-   align-items: center
-   color: white
-   background: #C06162
-   background: #34495e
-   position: relative
-   font-size: 18px
-   perspective: 1000px
-   z-index: 100
-   &:hover
-     background: #2980b9 
-     cursor: pointer
-     
-   &:hover .dropdown_menu li
-     display: block
+    background-color: darkgray;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
    
   }
   
