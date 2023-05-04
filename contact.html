@@ -9,55 +9,33 @@
     <link rel="stylesheet" type="text/css" href="footer.css" media="screen" />
   </head>
   <body>
+    <header>
 
-    <nav class="navbar">
-      
-      <!-- Logo on bar -->
-      
-      <div class="logo"><a href="index.html"><img src="CMRlogonotext.png"
-        width="80px"
-        height="80px" 
-        alt="logo">
-      </div>
-    </a>
-
-      
-      <ul class="nav-links">
-      
-      <!-- Checkbox toggle and icon -->
-      
-      <input type="checkbox" id="checkbox_toggle" />
-      
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-      
-      <!-- Menu -->
-      
-      <div class="menu">
-      <li><a href="index">Home</a></li>
-      <li><a href="about">About</a></li>
-      <li><a href="gallery">Gallery</a></li>
-      <ul class="services">
-        <a>Services</a>
-      
-      <!-- Dropdown -->      
-        <ul class="dropdown">
-    <li><a href="Deckandporch">Deck and Porch</a></li>
-    <li><a href="drywall">Custom Wall And Window</a></li>
-    <li><a href="fence">Fence</a></li>
-    <li><a href="kitchen">Kitchen</a></li>
-    <li><a href="pluming">Plumbing</a></li>
-    <li><a href="tileandflooring">Tile and Flooring</a></li>
-    
-      
-  </ul>
+      <div class="logo"><img src="CMRlogonotext.png" width="57px" height="57px" alt="logo"></div>
   
-</ul>
-<li><a href="contact.html">Contact</a></li>
-        </ul>
-      </li> 
-      </div>
-      </ul>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar">&#9776;</label>
+  
+      <nav class="navbar">
+          <ul>
+              <li><a href="index">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="gallery">Gallery</a></li>
+              <li><a href="services">Services +</a>
+                  <ul>
+                      <li><a href="Deckandporch">Deck and Porch</a></li>
+                      <li><a href="drywall">Custom Wall and Window</a></li>
+                      <li><a href="fence">Fence</a></li>
+                      <li><a href="kitchen">Kitchen</a></li>
+                      <li><a href="pluming">Plumbing</a></li>
+                      <li><a href="tileandflooring">Tile and Flooring</a></li>
+                  </ul>
+              </li>
+              <li><a href="contact">Contact</a></li>
+          </ul>
       </nav>
+      
+  </header>
 <style>
       * {
   box-sizing: border-box;
@@ -97,28 +75,13 @@ label {
   display: block;
 }
 
-
-input[type=text] {
+input,
+textarea {
   padding: 22.5px;
-  border: 2px solid black;
-  border-radius: 4px;
+  border: none;
+  border-radius: 5px;
   background-color: #f9f9f9;
 }
-
-input[type=number] {
-  padding: 22.5px;
-  border: 2px solid black;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-}
-
-input[type=message] {
-  padding: 22.5px;
-  border: 2px solid black;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-}
-  
 .box{
   color: #fff;
   background-color: #dd550c;
