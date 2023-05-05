@@ -13,7 +13,7 @@ body{
 header{ /* Controls almost everthing about the headers look*/
   position: absolute;
   top:0; left: 0; right:0;
-  background: #dfdfdf;
+  background: #9f9f9a;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
   padding:0px 7%;
   display: flex;
@@ -53,7 +53,7 @@ header .navbar ul li ul{ /* Controls the way it is lined up, the background colo
   position: absolute;
   left:0;
   width:200px;
-  background: #dfdfdf;
+  background: #9f9f9a;
   display: none;
 }
 
@@ -98,7 +98,7 @@ header label{  /* Controls font size, color and if pointer is apeared for hambur
   header .navbar{ /* Controls the header on mobile */
       position: absolute;
       top: 100%; left:0; right:0;
-      background:#dfdfdf;
+      background:#9f9f9a;
       border: 1px solid rgba(0, 0, 0, .1);
       display:none;
   }
@@ -113,7 +113,7 @@ header label{  /* Controls font size, color and if pointer is apeared for hambur
   }
 
   header .navbar ul li ul li{ /* Makes the dropdown(s) a different color */
-      background: #c4c4c4;
+      background: #888884;
   }
 
   header .navbar ul li ul li ul{ /* To make a dropdown inside a dropdown work */
