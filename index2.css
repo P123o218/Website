@@ -113,7 +113,7 @@ header label{  /* Controls font size, color and if pointer is apeared for hambur
   }
 
   header .navbar ul li ul li{ /* Makes the dropdown(s) a different color */
-      background: #888884;
+      background: #bbbbb6;
   }
 
   header .navbar ul li ul li ul{ /* To make a dropdown inside a dropdown work */
