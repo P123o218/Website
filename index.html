@@ -67,19 +67,14 @@ body, h1, h2, h3, h4, h5, h6 {
                 <li><a href="index">Home</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="gallery">Gallery</a></li>
-                  <div class="dropdown">
-                 <button class="dropbtn" onclick="myFunction()">Dropdown
-                 <i class="fa fa-caret-down"></i>
-                </button>
-                  <div class="dropdown-content" id="myDropdown">
+                <li><button><a>Services +</a></button>
+                    <ul>
                         <li><a href="Deckandporch">Deck and Porch</a></li>
                         <li><a href="drywall">Custom Wall and Window</a></li>
                         <li><a href="fence">Fence</a></li>
                         <li><a href="kitchen">Kitchen</a></li>
                         <li><a href="pluming">Plumbing</a></li>
                         <li><a href="tileandflooring">Tile and Flooring</a></li>
-			  </div>
-		    </div>
                     </ul>
                 </li>
                 <li><a href="contact">Contact</a></li>
@@ -88,24 +83,7 @@ body, h1, h2, h3, h4, h5, h6 {
         
     </header>
 </body>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
+      
 
     
 <style>
